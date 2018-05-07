@@ -1,8 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Chandra Mouli</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="m.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
   <style>
-   .fa {
+  #main{background-image: url('me.jpg');
+  height: 100%;
+     width: 100%;
+}
+.fa {
   padding: 20px;
   font-size: 30px;
   width: 30px;
@@ -11,140 +52,188 @@
   margin: 5px 2px;
   border-radius: 50%;
 }
+
 .fa:hover {
     opacity: 0.7;
 }
 
 .fa-facebook {
   background: #3B5998;
-  font-size: 1000px;
-  width: 1000px;
   color: white;
 }
 
 .fa-twitter {
-  font-size: 1000px;
-  width: 1000px;
   background: #55ACEE;
   color: white;
 }
 
 .fa-google {
-  font-size: 1000px;
-  width: 1000px;
   background: #dd4b39;
   color: white;
 }
 
 .fa-linkedin {
-  font-size: 1000px;
-  width: 1000px;
   background: #007bb5;
   color: white;
 }
 
 .fa-youtube {
-  font-size: 1000px;
-  width: 1000px;
   background: #bb0000;
   color: white;
 }
+
 .fa-instagram {
-  font-size: 1000px;
-  width: 1000px;
   background: #125688;
   color: white;
 }
-    img{border-radius:50%;}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+button{margin:15px;}
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
   </style>
-<title>My profile</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="w3-container w3-black">
-  <!--Image section-->
-  <div class="w3-container w3-center">
-    <img class="w3-border-blue" src="pic.jpg"  width="250px" height="250px">
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><b>{Chandra Mouli Yerraguntla}</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#what">WHAT</a></li>
+          <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
-  <!--Name-->
-  <div class="w3-container">
-    <h1 class="w3-jumbo w3-text-blue w3-center"><b>Chandra mouli Yerraguntla</b></h1>
-  </div>
-  <!--Education details-->
-  <div class="w3-container">
-    <h1 class="w3-jumbo w3-text-blue" >Education details</h1>
-    <ul>
-      <li>B.tech in Computer science at AITS,Rajampet</li>
-      <li>Intermediate at Sri chaitanya vijayawada</li>
-      <li>S.S.C at Sri vani High School,Tadipatri</li>
-    </ul>
-  </div>
-  <!--Languages-->
-  <div class="w3-container">
-    <h1 class="w3-jumbo w3-text-blue" >Languages</h1>
-    <ul>
-      <li>C</li>
-      <li>C++</li>
-      <li>JAVA</li>
-      <li>HTML,CSS,JS</li>
-      <li>NodeJS,python</li>
-    </ul>
-  </div>
-  <!--Hobbies-->
-  <div class="w3-container">
-    <h1 class="w3-jumbo w3-text-blue" >Hobbies</h1>
-    <ul>
-      <li>Reading books</li>
-      <li>Coding</li>
-      <li>Cooking</li>
-      <li>Blogging</li>
-    </ul>
-  </div>
-  <!--Achievements-->
-  <div class="w3-container">
-  <h1 class="w3-jumbo w3-text-blue">Projects</h1>
-    <h4><a href="https://github.com/codechandra/Aits_online_examination_portal">Online Examination portal</a></h4>
-     <h4><a href="https://github.com/codechandra/Realestate-project/tree/master/App">Online Real estate management System</a></h4>
-    <h4><a href="https://github.com/codechandra/imad-app">E-blood bank</a></h4>
-  </div>
-    <h1 class="w3-jumbo w3-text-blue">Let's get in touch</h1><br>
-  <div class="w3-center">
-    <a href="https://www.facebook.com/chandra.mouli.14289" class="fa fa-facebook"></a><br>
-<a href="https://twitter.com/codechandrag" class="fa fa-twitter"></a><br>
-<a href="https://plus.google.com/u/0/111759616337373546624" class="fa fa-google"></a><br>
-<a href="https://www.linkedin.com/in/chandra-mouli-63888b117/" class="fa fa-linkedin"></a><br>
-      <a href="https://www.instagram.com/chandra_010/" class="fa fa-instagram"></a><br>
-  </div>
-  <!--Quote-->
-  <div class="w3-container">
-    <h4 class="w3-center w3-text-blue"><b>"Stay Hungry Stay Foolish"</b></h4>
-  </div>
-    <div class="w3-container">
-    <h4 class="w3-center w3-text-blue"><b>Have a query??Drop it here</b></h4>
-      <form action="https://formspree.io/codechandra@gmail.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
-  </div>
-  <div class="w3-container w3-teal">
-  <h2>Input Form</h2>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center" id="who">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350"><br>
+  <h3 class="margin">I am a <b><a href="" class="typewrite" data-period="  2000" data-type='[ "full stack developer.", "Machine learning enthusiast.", "Blogger.", "coder." ,"Mentor.","Bibilographer.","Active learner.","Civil services Aspirant",",Foody."]'>
+      <span class="wrap"></span></a></b></h3>
 </div>
 
-<form class="w3-container" action="https://formspree.io/codechandra@gmail.com"
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center" id="what">
+  <h3 class="margin">What Am I?</h3>
+  <p>I am a developer by passion and a student by compulsion, pursuing my Bachelors in computer science at AITS,Rajampet.<br>Co-founder at Hurry Bean Technologies.I love to code and read.<br>Being an Introvert,I spend most of my time developing things in silence.</p>
+  <button class="btn btn-primary">Download Resume</button>
+</div>
+<div class="container-fluid bg-3 text-center" id="projects">
+<h2><b>Projects<b></h2>
+<div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Online examination portal</div>
+      <div class="panel-body">It's a portal where exams can be conducted online with ease and evaluation and result declaration can be done automatedly.</div>
+      <a>https://github.com/codechandra/Aits_online_examination_portal/tree/master/examination_portal</a>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Online real estate management system</div>
+      <div class="panel-body">It's an online platform where buying and selling of land can be done securely without the intervention of middle men.</div>
+      <a>https://github.com/codechandra/Realestate-project</a>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">E-blood bank</div>
+      <div class="panel-body">It's an online blood bank which helps recipents in finding the donors at the earliest possible and it works on the basis of location.</div>
+      <a>https://github.com/codechandra/imad-app</a>
+    </div>
+  </div>
+
+</div>
+<div class="container-fluid bg-3 text-center" style="background-color:#e74c3c" id="skills">
+<h2><b>Skills</b><h2>
+<button class="btn">HTML</button>
+<button class="btn">CSS</button>
+<button class="btn">JavaScript</button>
+<button class="btn">NodeJS</button><br>
+<button class="btn">SQL</button>
+<button class="btn">C</button>
+<button class="btn">C++</button>
+<button class="btn">JAVA</button><br>
+<button class="btn">Python</button>
+<button class="btn">Bootstrap</button>
+<button class="btn">Public speaking</button>
+<button class="btn">Blogging</button><br/>
+<button class="btn">Teaching</button>
+
+</div>
+<!-- Third Container (Grid) -->
+<div class="container" id="contact">
+  <div class="row">
+    <div class="col-sm-9">
+    <h3 class="text-info"><b>  I am a freelance full stack webdeveloper and co-founder at Hurry Bean technologies where we create websites,apps and various kinds of software.We are team of young minds destined to make this complex world simpler through programming.We would love to hear from you.</b></h3>
+
+    </div>
+    <div class="col-sm-3">
+  <form action="https://formspree.io/codechandra@gmail.com"
       method="POST">
-  <label class="w3-text-teal"><b>First Name</b></label>
-  <input class="w3-input w3-border w3-light-grey" type="text" name="name" >
-
-  <label class="w3-text-teal"><b>Last Name</b></label>
-  <input class="w3-input w3-border w3-light-grey" type="email" name="_replyto">
-
-  <button class="w3-btn w3-blue-grey" >Register</button>
+      <h4 class="text-primary"><b>Drop me a message</b></h4>
+        <input type="email" class="form-control" name="_replyto" placeholder="E-mail"><br>
+        <textarea name="name" class="form-control" rows="5" id="comment" placeholder="message"></textarea>
+    <button class="btn btn-info center">Send</button>
 </form>
-  <div>
-    
-  <h6 class="w3-center "style="font-size:30px; margin-top:20px;font-family:Lily Script One;">Made with <i class="material-icons">favorite</i> on <i class="material-icons">code</i> by Chandra mouli</h6>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Made by Chandra Mouli</p>
+</footer>
+
 </body>
 </html>
